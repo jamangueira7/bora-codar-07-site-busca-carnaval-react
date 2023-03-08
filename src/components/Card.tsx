@@ -1,14 +1,23 @@
 import styles from "./Card.module.css";
-export function Card() {
+import { CardProps } from "./Cards";
+
+interface CardElementProps {
+  block: CardProps
+}
+export function Card({ block } : CardElementProps ) {
+
+  const { id, name, description, place, image } = block;
+  const imageComplete = `../../img/${image}`;
+
   return(
     <div className={styles.card}>
-      <img src="./img/img_card_1.svg" alt="O Python do vovô não sobe mais"/>
+      <img src={imageComplete} alt={name}/>
       <div className={styles.content}>
-        <h3>O Python do vovô não sobe mais</h3>
-        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        <h3>{name}</h3>
+        <p>{description}</p>
         <div className={styles.location}>
           <i className="ph-map-pin-light"></i>
-          São Paulo
+          {place}
         </div>
       </div>
     </div>

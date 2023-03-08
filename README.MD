@@ -16,11 +16,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [NodeJS](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
 
 
 ## 💻 Projeto
 
-Projeto de front end (apenas template) de um site de busca de carnaval.
+Projeto de um site de busca de carnaval em React.
 
 ![img.png](.github%2Fimg.png)
 ![img.png](.github%2Fimg.png)
