@@ -2,8 +2,9 @@ import { Card } from "./Card";
 
 export function Cards() {
   return(
-    <div>
+    <main>
+      Cards
       <Card />
-    </div>
+    </main>
   );
 }
