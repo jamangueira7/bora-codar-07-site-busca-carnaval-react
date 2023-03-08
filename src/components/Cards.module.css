@@ -1,0 +1,24 @@
+main > .content {
+  max-width: 121.6rem;
+  margin: 2rem auto;
+}
+
+section.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.top .view {
+  display: flex;
+  padding: 0.8rem;
+  border: 0.1rem solid #EAEAEA;
+  border-radius: 0.6rem;
+}
+
+section.cards {
+  margin-top: 4rem;
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}

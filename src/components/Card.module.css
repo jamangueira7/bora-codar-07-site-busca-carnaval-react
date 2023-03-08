@@ -1,0 +1,50 @@
+
+.card {
+    background: #FFFFFF;
+    border: 0.1rem solid #EAEAEA;
+    border-radius: 1rem;
+    max-width: 38.4rem;
+    overflow: hidden;
+}
+.card .content {
+    display: grid;
+    padding: 1.6rem;
+    gap: 1.6rem;
+}
+
+.card h3 {
+    color: #121214;
+    font-size: 2rem;
+    line-height: 140%;
+}
+
+.card p {
+    opacity: 0.75;
+}
+
+.card .location {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    opacity: 0.75;
+}
+
+.location i {
+    color: #E45858;
+    font-size: 2.4rem;
+}
+
+main {
+    padding-inline: 4rem;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 50%;
+    }
+
+    header::before {
+        background-size: 30vw;
+        background-repeat: no-repeat;
+    }
+}

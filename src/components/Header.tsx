@@ -1,6 +1,14 @@
 import styles from "./Header.module.css";
 
-export function Header() {
+interface CityProps {
+  name: string;
+  abs: string;
+}
+interface HeaderProps {
+  cities: CityProps[]
+}
+
+export function Header({ cities }: HeaderProps) {
   return(
     <header>
       <div className={styles.content}>
@@ -19,9 +27,11 @@ export function Header() {
             <i className="ph-map-pin-light"></i>
             <select id="city" name="city">
               <option value="0" selected>Selecione uma cidade</option>
-              <option value="SP">São Paulo</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="BA">Salvador</option>
+              {
+                cities.map(city => {
+                  return <option value={city.abs}>{city.name}</option>
+                })
+              }
             </select>
             <i className="ph-caret-down-light"></i>
           </div>
